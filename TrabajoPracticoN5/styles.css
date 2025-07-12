@@ -1,0 +1,113 @@
+/* --- Ejercicio 1: Modelo de Caja --- */
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #2a9d8f;
+    margin: 10px;
+    background-color: #e0f7fa;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Content-box: el tamaño total aumenta por padding y border */
+.content-box {
+    box-sizing: content-box;
+}
+
+/* Border-box: el tamaño total incluye padding y border dentro del width */
+.border-box {
+    box-sizing: border-box;
+}
+
+/* --- Ejercicio 2: Posicionamiento --- */
+
+.pos-static {
+    position: static; /* valor por defecto */
+    background-color: #ffb703;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pos-relative {
+    position: relative;
+    top: 10px; /* mueve 10px hacia abajo respecto a su posición original */
+    left: 10px; /* mueve 10px hacia la derecha */
+    background-color: #fb8500;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pos-absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    background-color: #219ebc;
+    color: white;
+    padding: 10px;
+}
+
+.pos-fixed {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+    background-color: #023047;
+    color: white;
+    padding: 10px;
+}
+
+/* --- Ejercicio 3: Propiedad Display --- */
+
+.display-inline {
+    display: inline;
+    background-color: #ffb4a2;
+    margin: 5px;
+    padding: 5px;
+}
+
+.display-block {
+    display: block;
+    background-color: #8ecae6;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background-color: #219ebc;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+/* Elemento oculto */
+.display-none {
+    display: none;
+    background-color: #ff006e;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Mostrar elemento oculto al hacer hover en el botón */
+.show-on-hover:hover + .display-none {
+    display: block;
+}
+
+/* --- Ejercicio 4: Google Fonts --- */
+
+/* Sin fuente Roboto, se usa la fuente por defecto del navegador */
+.sin-fuente {
+    font-size: 18px;
+}
+
+/* Aplicando fuente Roboto desde Google Fonts */
+.con-fuente {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #0077b6;
+}
