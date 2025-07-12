@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicios CSS Fundamentales</title>
+    <!-- Ejercicio 4: Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <h1>Ejercicios CSS Fundamentales</h1>
+
+    <!-- Ejercicio 1: Modelo de Caja -->
+    <section id="ejercicio1">
+        <h2>Ejercicio 1: Modelo de Caja</h2>
+        <div class="box content-box">Content-box</div>
+        <div class="box border-box">Border-box</div>
+        <p>
+            Observación: El contenedor con <code>box-sizing: content-box</code> tiene el tamaño total que suma width + padding + border,
+            mientras que <code>border-box</code> incluye padding y border dentro del width.
+        </p>
+    </section>
+
+    <!-- Ejercicio 2: Posicionamiento -->
+    <section id="ejercicio2">
+        <h2>Ejercicio 2: Posicionamiento</h2>
+        <div class="pos-static">position: static (default)</div>
+        <div class="pos-relative">position: relative</div>
+        <div class="pos-absolute">position: absolute</div>
+        <div class="pos-fixed">position: fixed</div>
+        <p>Observa cómo se comporta cada caja con diferentes posicionamientos.</p>
+    </section>
+
+    <!-- Ejercicio 3: Propiedad Display -->
+    <section id="ejercicio3">
+        <h2>Ejercicio 3: Propiedad Display</h2>
+        <p class="display-inline">Display inline</p>
+        <p class="display-block">Display block</p>
+        <p class="display-inline-block">Display inline-block</p>
+        <p class="display-none">Display none (se oculta al hacer hover en el siguiente elemento)</p>
+        <button class="show-on-hover">Pasa el mouse por aquí para mostrar el elemento oculto</button>
+    </section>
+
+    <!-- Ejercicio 4: Google Fonts -->
+    <section id="ejercicio4">
+        <h2>Ejercicio 4: Integración Google Fonts</h2>
+        <p class="sin-fuente">Texto sin fuente Roboto (fuente por defecto)</p>
+        <p class="con-fuente">Texto con fuente Roboto aplicada</p>
+    </section>
+
+</body>
+</html>
